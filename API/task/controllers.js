@@ -16,7 +16,7 @@ exports.createTask = (req, res) => {
 };
 exports.deleteTask = (req, res) => {
   const { taskId } = req.params;
-  const foundTask = tasks.filter((task) => task.id === +taskId);
+  const foundTask = tasks.find((task) => task.id === +taskId);
 
   if (foundTask) {
     tasks = tasks.filter((task) => task.id !== +taskId);
