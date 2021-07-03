@@ -8,9 +8,10 @@ exports.createTask = (req, res) => {
   const id = tasks.length + 1;
   const newTask = {
     id: id,
-    done: false,
+    status: false,
     ...req.body,
   };
+  console.log(req.body);
   tasks.push(newTask);
   res.status(201).json(newTask);
 };

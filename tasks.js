@@ -4,6 +4,7 @@ const tasks = [
     name: "Clean the kitchen",
     description: "description",
     status: true,
+
     priority: "High",
   },
   {
@@ -11,6 +12,7 @@ const tasks = [
     name: "Iron clothes",
     description: "description",
     status: false,
+
     priority: "High",
   },
 ];
